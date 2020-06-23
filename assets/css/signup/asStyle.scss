@@ -1,0 +1,99 @@
+$alumni-color: #950A0A;
+$business-color:  #002441;
+
+body
+{
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	min-width:480px;
+}
+.container
+{
+	width: 80%;
+	margin:auto;
+	.formcontainer
+		{
+			margin: 5% 0%;
+			.alumniregisterform
+			{
+				box-shadow: 1px 1px 15px lightgrey;
+				width: 60%;
+				border-radius: 5px;
+				margin: auto;
+				margin-bottom: 5%;
+				padding: 2%;
+				font-size: 1.1em;
+
+				background: rgba(140,18,21,0.9);
+
+				@media only screen and (max-width: 1000px) 
+				{
+					width:100%;
+				}
+
+				form
+				{
+					margin: auto;
+					width:60%;
+
+				}
+				
+				p 
+				{
+					font-size: 2em;
+					text-decoration: underline;
+					color: white;
+					margin-top: 1%;
+					width: 80%;
+					margin: 0% 10%;
+					margin-bottom: 2%;
+				}
+
+				span 
+				{
+					color: white;
+					width: 80%;
+					margin: 0% 10%;
+				}
+
+				input
+				{
+					width:80%;
+					line-height: 2em;
+					margin-bottom: 0.5%;
+					margin:0% 10%;
+					margin-bottom: 0.5%;
+
+				}
+
+				.check
+				{
+					width: 10%;
+				}
+				button
+				{
+
+						width: 50%;
+						margin: 3% 25%; //margin:auto; not working
+						height: 50px;
+
+						background: white;
+						border: none;
+						cursor: pointer;
+
+						transition: 0.0.5s;
+
+						&:active{transform: scale(1.01);}
+						&:hover{background:lightgrey;}
+				}
+			}
+		}
+
+}
+				.error
+			{
+				color: white;
+			}

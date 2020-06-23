@@ -1,0 +1,14 @@
+Alumni_color = #950A0A;
+
+Business_color = #336699;
+
+-------------
+FONTS
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+</style>
+
+font-family: 'Oswald', sans-serif;

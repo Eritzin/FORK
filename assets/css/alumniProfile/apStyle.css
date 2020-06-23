@@ -1,0 +1,118 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  min-width: 480px; }
+
+.profile {
+  width: 65%;
+  margin: auto;
+  color: black;
+  font-weight: 300;
+  border-bottom: 5px solid #950A0A; }
+  @media only screen and (max-width: 1000px) {
+    .profile {
+      width: 90%; } }
+
+.container {
+  box-shadow: 0px 0px 15px lightgrey;
+  width: 65%;
+  margin: 1% auto; }
+  @media only screen and (max-width: 1000px) {
+    .container {
+      width: 90%; } }
+  .container .top {
+    display: flex;
+    flex-wrap: wrap; }
+    .container .top .topleft {
+      width: 50%;
+      margin: auto; }
+      .container .top .topleft img {
+        width: 300px;
+        border-radius: 0px 0px 30px 0px;
+        width: 100%;
+        box-shadow: 1px 1px 15px lightgrey; }
+    .container .top .topright {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      min-width: 250px;
+      margin: auto; }
+      .container .top .topright .name {
+        font-size: 1.5em;
+        line-height: 50px;
+        margin: auto; }
+      .container .top .topright .portfolio {
+        line-height: 50px;
+        margin: 0% 10%;
+        border-left: 5px solid #950A0A;
+        border-radius: 0px 5px 5px 0px;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-decoration: none;
+        color: black;
+        margin: auto;
+        transition: 0.3s; }
+        .container .top .topright .portfolio:hover {
+          border-left: 15px solid #336699; }
+        .container .top .topright .portfolio:hover {
+          color: darkgrey; }
+      .container .top .topright .available {
+        margin-top: 5%;
+        align-self: center;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 1.2em;
+        font-weight: 300;
+        text-decoration: none;
+        color: black;
+        width: 25%;
+        text-align: center;
+        padding: 1%;
+        transition: 0.3s; }
+        .container .top .topright .available:hover {
+          background: #950A0A; }
+        .container .top .topright .available:hover {
+          color: white; }
+      .container .top .topright .unavailable {
+        margin-top: 5%;
+        align-self: center;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+        width: 25%;
+        text-align: center;
+        padding: 1%;
+        background: lightgrey;
+        color: #950A0A; }
+  .container .bottom {
+    margin: 1%;
+    padding-bottom: 5%; }
+    .container .bottom .description {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 0.5%;
+      border-left: 5px solid #950A0A;
+      font-size: 1em; }
+    .container .bottom .skills p {
+      font-size: 1.5em; }
+    .container .bottom .skills .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .container .bottom .skills .list div {
+        flex-basis: 20%;
+        text-align: center;
+        border: 1px solid black;
+        margin: 1% 0%;
+        border-left: 5px solid #950A0A;
+        transition: 0.3s;
+        padding: 1%; }
+        .container .bottom .skills .list div:hover {
+          background: #950A0A; }
+        .container .bottom .skills .list div:hover {
+          color: white; }
+
+/*# sourceMappingURL=apStyle.css.map */

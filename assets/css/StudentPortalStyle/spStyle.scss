@@ -1,0 +1,276 @@
+$alumni-color: #950A0A;
+$business-color:  #336699;
+
+body
+{
+	font-family: 'Oswald', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+	min-width:480px;
+}
+
+
+// ----------------------------
+.container
+{
+	position: relative;
+	
+	.dataViewer
+	{
+		position: absolute;
+		z-index: 1;
+	}
+
+	.searchdiv
+	{
+		border-radius: 10px;
+		width: 50%;
+		min-width:300px;
+		background-color: rgba(255,255,255,0.9);
+		margin: 0% 25%;
+		position: absolute;
+		top:-80px;
+		z-index: 10;
+
+		.searchbox
+		{
+			display: flex;
+			justify-content: center;
+
+			span
+			{
+
+				height: 40px;
+				line-height: 40px;
+				padding: 0% 0.5%;
+				font-size: 15px;
+				background: $business-color;
+				color: white;
+
+				border-radius: 5px 0px 0px 5px;
+			}
+
+			input
+			{
+				border:none;
+				border-right: 5px solid $business-color;
+				padding: 0% 1%;
+				font-size: 15px;
+			}
+		}
+		#searchResults
+		{
+		
+			.alumni
+			{
+				height: 50px;
+				object-fit: cover;
+				display: flex;		
+				justify-content: space-between;		
+				border: 1px solid black;
+				width: 90%;
+				min-width:300px;
+				margin: 1% auto;
+
+				font-size: 1em;
+
+				a 
+				{
+					line-height: 50px;
+					margin: 0% 5%;
+					border-left: 5px solid $alumni-color;
+					border-radius: 0px 5px 5px 0px;
+					font-size: 1em;
+					text-decoration: none;
+					color: black;
+
+					flex-basis: 25%;
+					
+
+					
+					transition: 0.3s;
+
+					&:hover{border-left: 15px solid $business-color;}
+					&:hover{color: darkgrey;}
+
+				}
+
+				p
+				{
+					font-size: 1em;
+					line-height: 50px;
+					margin: 0% 5%;
+					flex-basis: 25%;
+				}
+
+				img
+				{
+					object-fit: cover;
+					width:50px;
+					flex-basis: 25%;
+				}
+			}
+			
+		}
+
+	}
+
+}
+
+
+
+
+
+// ----------------------------
+
+#dataViewer
+{
+	width: 65%;
+	margin: auto;
+	margin-top: 85px;
+
+	@media only screen and (max-width: 800px) 
+	{
+		width:90%;
+	}
+
+	.alumni
+	{
+		border-left: 8px solid $alumni-color;
+		box-shadow: 1px 1px 15px lightgrey;
+
+		margin: 3%;
+
+		.top
+		{
+			display: flex;
+			width: 100%;
+
+			.topleft
+			{
+				margin:auto;
+				
+
+				.aImage
+				{
+					border-radius: 0px 15px 15px 0px;
+					margin: 1% 0%;
+					width: 200px;
+				}
+
+			}
+
+			.topRight
+			{
+				
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+
+
+				p
+				{
+					border-left:5px solid transparent;
+					margin-top: 3%;
+					
+					font-size: 1.5em;
+					
+				}
+
+				a 
+				{
+					
+					border-left: 5px solid $alumni-color;
+					border-radius: 0px 5px 5px 0px;
+					padding: 1%;
+					font-size: 1em;
+					text-decoration: none;
+					color: black;
+
+					
+					transition: 0.3s;
+
+					&:hover{border-left: 15px solid $business-color;}
+					&:hover{color: darkgrey;}
+
+				}
+
+			}
+		}
+			
+
+
+
+
+
+		.bottom
+		{
+			display: flex;
+
+			.bottomLeft
+			{
+					
+				width: 50%;
+
+				p 
+				{
+					font-size: 1.5em;
+					margin: 0%;
+					margin-left: 5px;
+
+
+				}
+
+				span 
+				{
+					font-weight: 300;
+					margin-left: 5px;
+				}
+
+
+			}
+
+			.bottomRight
+			{
+				
+				width: 50%;
+				text-align: center;
+
+				button
+				{
+					border: none;
+					// background: none;
+					width: 50%;
+					height: 50%;
+					cursor: pointer;
+
+					font-size: 1em;
+
+					transition: 0.05s;
+
+					&:active{font-size: 1.05em;}
+				}
+				
+
+
+
+
+			}
+
+		}
+
+
+	}
+}
+
+
+
+
+
+
+.fav
+{
+	background:#FFD700;
+}

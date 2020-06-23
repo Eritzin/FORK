@@ -1,0 +1,26 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap%27');
+
+body{
+	font-family: 'Oswald', sans-serif;
+}
+
+.alumniAccount{
+	background-color: #950A0A;
+}
+
+.businessAccount{
+	background-color:  #336699;
+	
+}
+
+.jobAccount{
+	background-color: #2E7719;
+}
+
+.massageUpdated{
+	margin-top: 20%;
+}
+

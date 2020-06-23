@@ -1,0 +1,40 @@
+.jumbo{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutText{
+	text-align: center;
+	margin-right: 3rem;
+	margin-left: 3rem;
+	margin-top: 2rem;
+	font-size: 2rem;
+	color: darkred;
+	font-weight: bold;
+	margin-bottom: 3rem;
+}
+
+.link{
+	text-decoration: none;
+}
+
+.aboutBox{
+	width: 70%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup{
+	display: flex;
+	justify-content: center;
+}
+
+.signM{
+	margin-right: 3rem;
+}
+
+.noBG{
+	background-color: transparent;
+}

@@ -1,0 +1,188 @@
+$alumni-color: #950A0A;
+$business-color:  #336699;
+
+body
+{
+	font-family: 'Oswald', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+	min-width:480px;
+}
+
+// ----------------------------
+
+.profile
+{
+	width: 65%;
+	margin: auto;
+	color: black;
+	font-weight: 300;
+	
+	border-bottom: 5px solid $alumni-color;
+	@media only screen and (max-width: 1000px) 
+	{
+		width:90%;
+	}
+
+}
+
+.container
+{
+	box-shadow: 0px 0px 15px lightgrey;
+	width:65%;
+	margin: 1% auto;
+
+	@media only screen and (max-width: 1000px) 
+	{
+		width:90%;
+	}
+
+	.top
+	{
+		display:flex;
+		flex-wrap: wrap;
+
+		.topleft
+		{
+			
+			width: 50%;
+			margin: auto;
+
+			img 
+			{
+				width: 300px;
+				border-radius: 0px 0px 30px 0px;
+				width: 100%;
+
+				box-shadow: 1px 1px 15px lightgrey;
+			}
+		}
+
+		.topright
+		{
+			width: 50%;
+			
+			display: flex; 
+			flex-direction: column;
+			flex-wrap: wrap;
+			min-width: 250px;
+			margin: auto;
+    	
+			
+			.name
+			{
+				font-size: 1.5em;
+				line-height: 50px;
+				margin: auto;
+
+
+			}
+
+			.portfolio
+			{
+				line-height: 50px;
+				margin: 0% 10%;
+				border-left: 5px solid $alumni-color;
+				border-radius: 0px 5px 5px 0px;
+				font-size: 1.5em;
+				font-weight: 300;
+				text-decoration: none;
+				color: black;
+				margin: auto;
+
+				
+				transition: 0.3s;
+
+				&:hover{border-left: 15px solid $business-color;}
+				&:hover{color: darkgrey;}
+
+			}
+
+			.available
+			{
+				margin-top: 5%;
+				align-self: center;
+				border-radius: 5px 5px 5px 5px;
+				font-size: 1.2em;
+				font-weight: 300;
+				text-decoration: none;
+				color: black;
+				width: 25%;
+				text-align: center;
+				padding: 1%;
+
+				
+				transition: 0.3s;
+
+				&:hover{background: $alumni-color;}
+				&:hover{color: white;}
+			}
+
+			.unavailable
+			{
+				margin-top: 5%;
+				align-self: center;
+				border-radius: 5px 5px 5px 5px;
+				font-size: 1.2em;
+				font-weight: 400;
+				text-decoration: none;
+				color: black;
+				width: 25%;
+				text-align: center;
+				padding: 1%;
+				background: lightgrey;
+				color: $alumni-color;
+	
+				
+			}
+
+		}
+	}
+
+	.bottom
+	{
+		margin: 1%;
+		padding-bottom: 5%;
+
+		.description
+		{
+			background: rgba(0,0,0,0.1);
+			padding: 0.5%;
+			border-left: 5px solid $alumni-color;
+			font-size: 1em;
+		}
+
+		.skills
+		{
+			p 
+			{
+				font-size: 1.5em;
+			}
+
+			.list
+			{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				div
+				{
+					flex-basis: 20%;
+					text-align: center;
+					border: 1px solid black;
+					margin: 1% 0%;
+					border-left: 5px solid $alumni-color;
+					transition: 0.3s;
+					padding: 1%;
+
+					&:hover{background: $alumni-color;}
+					&:hover{color: white;}
+				}
+			}
+		}
+
+	}
+
+}

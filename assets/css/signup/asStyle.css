@@ -1,0 +1,64 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 480px; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+  .container .formcontainer {
+    margin: 5% 0%; }
+    .container .formcontainer .alumniregisterform {
+      box-shadow: 1px 1px 15px lightgrey;
+      width: 60%;
+      border-radius: 5px;
+      margin: auto;
+      margin-bottom: 5%;
+      padding: 2%;
+      font-size: 1.1em;
+      background: rgba(140, 18, 21, 0.9); }
+      @media only screen and (max-width: 1000px) {
+        .container .formcontainer .alumniregisterform {
+          width: 100%; } }
+      .container .formcontainer .alumniregisterform form {
+        margin: auto;
+        width: 60%; }
+      .container .formcontainer .alumniregisterform p {
+        font-size: 2em;
+        text-decoration: underline;
+        color: white;
+        margin-top: 1%;
+        width: 80%;
+        margin: 0% 10%;
+        margin-bottom: 2%; }
+      .container .formcontainer .alumniregisterform span {
+        color: white;
+        width: 80%;
+        margin: 0% 10%; }
+      .container .formcontainer .alumniregisterform input {
+        width: 80%;
+        line-height: 2em;
+        margin-bottom: 0.5%;
+        margin: 0% 10%;
+        margin-bottom: 0.5%; }
+      .container .formcontainer .alumniregisterform .check {
+        width: 10%; }
+      .container .formcontainer .alumniregisterform button {
+        width: 50%;
+        margin: 3% 25%;
+        height: 50px;
+        background: white;
+        border: none;
+        cursor: pointer;
+        transition: 0 0.5s; }
+        .container .formcontainer .alumniregisterform button:active {
+          transform: scale(1.01); }
+        .container .formcontainer .alumniregisterform button:hover {
+          background: lightgrey; }
+
+.error {
+  color: white; }
+
+/*# sourceMappingURL=asStyle.css.map */
